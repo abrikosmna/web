@@ -1,0 +1,85 @@
+body{
+ background-color: black;
+}
+
+.one{
+    position: absolute;
+    width: 44px;
+    height: 37px;
+    left: 46px;
+    top: 42px;
+
+    background: #D9D9D9;
+}
+.two{
+    position: absolute;
+    width: 81px;
+    height: 65px;
+    left: 95px;
+    top: 29px;
+
+    background: #D9D9D9;
+}
+.tree{
+    position: absolute;
+    width: 87px;
+    height: 29px;
+    left: 206px;
+    top: 206px;
+
+    background: #C63939;
+}
+.four{
+    position: absolute;
+    width: 614px;
+    height: 86px;
+    left: 406px;
+    top: 206px;
+
+    background: #C63939;
+}
+.five{
+    position: absolute;
+    width: 408px;
+    height: 32px;
+    left: 412px;
+    top: 302px;
+
+    background: #C63939;
+}
+.six{
+    position: absolute;
+    width: 239px;
+    height: 29px;
+    left: 405px;
+    top: 403px;
+
+    background: #17B992;
+}
+.seven{
+    position: absolute;
+    width: 230px;
+    height: 28px;
+    left: 720px;
+    top: 404px;
+
+    background: #17B992;
+}
+.eight{
+    position: absolute;
+width: 97px;
+height: 22px;
+left: 1015px;
+top: 410px;
+
+background: #17B992;
+}
+.nine{
+    position: absolute;
+    width: 624px;
+    height: 27px;
+    left: 411px;
+    top: 551px;
+
+    background: #E369D0;
+}
