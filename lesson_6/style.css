@@ -1,0 +1,49 @@
+body
+{
+    background-color: #20B2AA;
+}
+thead{
+    font-size: 20pt;
+    color: #FF00FF;
+}
+tbody{
+    font-size: 15pt;
+    color: #BA55D3;
+}
+tfoot{
+    color: #BA55D3;
+    font-weight: bold;
+}
+.sueta{
+    background-color: #4B0082;
+    width: 30%;
+}
+.apple .phone::before{
+    content: "🍎";
+}
+.price::before{
+    content: "💲";
+}
+.android .phone::before{
+    content: "🤖";
+}
+td, th{
+    border: 2px solid black;
+}
+table{
+    border-collapse: collapse;
+}
+.one{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+.two{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+}
+div{
+    display: inline;
+    position: absolute;
+}
