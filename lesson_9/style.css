@@ -1,0 +1,62 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(#200d8c50, #550d8c), url(https://i.gifer.com/Iox.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 22px;
+    padding: 20px 0;
+}
+
+form{
+    background: rgba(80,65,144,0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+    padding: 50px 100px;
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 25px;
+}
+
+label{
+    display: block;
+    margin: 25px 0;
+}
+
+input, textarea{
+    background-color: transparent;
+    padding: 15px;
+    border: 4px solid white;
+    border-radius: 25px;
+    width:  100%;
+    color: white;
+    font-size: 24px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    width: 20px;
+}
+
+.left_side{
+    text-align: left;
+}
+
+button{
+    border: none;
+    width: 150px;
+    padding: 12px;
+    color: white;
+    border-radius: 15px;
+    background-image: linear-gradient(90deg,#200d8c, #550d8c);
+}
