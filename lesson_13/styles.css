@@ -178,14 +178,16 @@ q {
 }
 
 .footer{
-    background-color: #EFEFEF;
+    background-color: rgba(229, 229, 247, 0,8);
     padding: 18px 25px;
     display: flex;
     /* justify-content - выравнивание по оснвной оси */
     justify-content: space-between;  
     /*  align-items - вырвнивание по побочной оси */
     align-items: center;
-    color: #7E7E7E;
+    color: #141414;
+    background-color: #e2e2ee;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e2e2ee 11px ), repeating-linear-gradient( #c2c3d755, #c2c3d7 );
 }
 
 .footer a{
@@ -205,6 +207,19 @@ q {
 }
 
 /* Games */
+
+.games_header>img{
+    width: 25%;
+    top: 0;
+}
+
+.games_header p{
+    max-width: 40%;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
 
 .game-box{
     display: flex;
@@ -437,4 +452,28 @@ q {
 
 hr{
     margin: 50px 0;
+}
+
+.burger_menu{
+    width: 55px;
+    height: 55px;
+    border: 1px solid var(--btn-red);
+    display: none;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.burger_menu:hover{
+    transform: scale(1.1);
+}
+
+.burger_menu>span{
+    display: block;
+    width: 70%;
+    height: 2px;
+    background-color: var(--btn-red);
+    margin: 5px 0;
 }
