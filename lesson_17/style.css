@@ -1,0 +1,68 @@
+header, footer, .testimonials {
+    background-color: #0c73a7;
+    color: aliceblue;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.navbar {
+    padding-bottom: 5%;
+}
+
+header {
+    padding: 2% 10% 7%;
+}
+
+.download-btn {
+    margin: 5% 3% 5% 0;
+}
+
+.title-img {
+    width: 60%;
+    transform: rotate(20deg);
+    border-radius: 20px;
+}
+
+.features-img {
+    width: 40%;
+}
+
+.features {
+    padding: 7% 0;
+}
+
+.testi-text {
+    font-size: 2.5rem;
+    padding: 8.5%;
+}
+
+.cards{
+    padding: 0 17%;
+}
+
+.faq{
+    padding: 5% 0;
+}
+
+.accordion{
+    padding: 0 8%;
+}
+
+.accard-sect{
+    background-color: #0c73a7;
+    padding:  7% 0;
+}
+
+.paw{
+    width: 350px;
+    opacity: 60%;
+}
+
+footer{
+    font-size: 28px;
+    padding: 3% 0;
+    text-align: center;
+}
