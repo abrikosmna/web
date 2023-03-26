@@ -1,33 +1,49 @@
 // let num = Math.trunc( Math.random() * 6) +1;
 // console.log(num);
+
 let num = Math.trunc( Math.random() * 10) +1;
 let inp = document.querySelector('.inp');
+let score = document.querySelector('.red_score');
+let record = document.querySelector('.red_record');;
 function fun(){
     let vh = inp.value;
     console.log(vh, num)
-    let num_f = num;
-    let score =  document.querySelector('.score').value;
-    let record = [];
-    if (vh < num_f)
+    let score_f = Number(score.innerHTML);
+    if (vh < num)
     {
-        console.log("О")
         document.querySelector('.min-max').innerHTML = "загаданное число больше";
-        score =  document.querySelector('.score').value + 1;
+        score_f += 1;
+        score.innerHTML = score_f;
     }
-    else if (vh > num_f) 
+    else if (vh > num) 
     {
-        console.log("Д")
         document.querySelector('.min-max').innerHTML = "загаданное число меньше";
-        score =  document.querySelector('.score').value + 1;
+        score_f += 1;
+        document.querySelector('.red_score').innerHTML = score_f;
     }
-    else 
+    else
     {
-        console.log("тТ")
-        document.querySelector('.znak').value = num_f;
-        score =  document.querySelector('.score').value + 1;
-        record.push(score);
-        document.querySelector('.record').value = Math.min(record);
+        document.querySelector('.znak').innerHTML = num;
+        score_f += 1;
+        document.querySelector('.red_score').innerHTML = score_f;
+        if (record.innerHTML == "0"){
+            record.innerHTML = score_f;
+        }
+        else{
+            if (record.innerHTML > score_f){
+                record.innerHTML = score_f;
+            }
+        }
+        document.getElementById("mybtn").disabled = true;
+
     }
+        
+}
+
+function repeat(){
+    document.getElementById("mybtn").disabled = false;
+    document.querySelector('.znak').innerHTML = "?";
+    document.querySelector('.red_score').innerHTML = 0;
 }
 
 

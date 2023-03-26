@@ -78,6 +78,14 @@ body{
     color: #FF0000;
 }
 
+.red_score{
+    color: #FF0000;
+}
+
+.red_record{
+    color: #FF0000;
+}
+
 .mid_text{
     position: absolute;
     width: 337px;
@@ -170,7 +178,7 @@ body{
     color: #FFFFFF;
 }   
 
-.reapet{
+.reap{
     position: absolute;
     border-radius: 50%;
     width: 140px;
@@ -187,7 +195,7 @@ body{
     color: #FFFFFF;
 }
 
-.reapet:active{
+.reap:active{
     background: #161616;
     border-color: #FFFFFF;
 }
