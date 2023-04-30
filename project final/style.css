@@ -1,0 +1,88 @@
+body{
+    background-color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+.main_head{
+    display: flex;
+    background-color: #3E94D1;
+    font-size: 24px;
+    height: 10%;
+    width: 100%;
+}
+
+.head_name{
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.menu{
+    border: 3px solid black;
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.shlyapa {
+    width: 65%;
+    text-align: right;
+}
+
+.slider{
+    position: relative;
+}
+
+.slides_container{
+    
+    height: 70vh;
+    width: 90%;
+    display: flex;
+    margin: 10px auto 10px auto;;
+    padding: auto;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.slide{
+    width: 95%;
+    padding: 50px;
+    flex: 1 0  95%;
+}
+
+.slide:nth-child(odd){
+    background-color: cadetblue;
+}
+
+.arrow{
+    background-color: whitesmoke;
+    height: 70px;
+    width: 40px;
+    font-size: 50px;
+    cursor: pointer;
+    opacity: 0.5;
+    border: none;
+    position: absolute;
+    /* top: 45%; */
+    /* transform: translateY(-50%); */
+    transition: opacity 100ms ease;
+}
+
+.arrow:hover{
+    opacity: 1;
+}
+
+/* #next{
+    right: 0;
+    border-radius: 20px 0 0 20px;
+}
+
+#prev{
+    left: 0;
+    border-radius: 0 20px 20px 0;
+} */
