@@ -55,6 +55,18 @@ body{
     flex: 1 0  95%;
 }
 
+.image_slide{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;	
+}
+
+.text_slide{
+    color: black;
+    font-size: 32px;
+    text-decoration: none;
+}
+
 .slide:nth-child(odd){
     background-color: cadetblue;
 }
@@ -68,8 +80,6 @@ body{
     opacity: 0.5;
     border: none;
     position: absolute;
-    /* top: 45%; */
-    /* transform: translateY(-50%); */
     transition: opacity 100ms ease;
 }
 
@@ -77,12 +87,83 @@ body{
     opacity: 1;
 }
 
-/* #next{
-    right: 0;
+#next{
+    right: 5%;
+    top: 40%;
     border-radius: 20px 0 0 20px;
 }
 
 #prev{
-    left: 0;
+    left: 5%;
+    top: 40%;
     border-radius: 0 20px 20px 0;
-} */
+}
+
+.recipe_main{
+    width: 90%;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+.recipe_foto{
+    float: left;
+    margin: 7px 6% 7px 7px;
+}
+
+.foto_recipe{
+    border-radius: 25px;
+    width: 40vw;
+    height: 50vh;
+    margin-bottom: 20px;
+    border: 3px solid #3E94D1;
+}
+
+.recipe_opisanie{
+    top: 100px;
+    width: 40vw;
+    height: 40vh;
+    float: left;
+    padding: 15px;
+    border: 3px solid #3E94D1;
+    font-size: 28px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.name_recipe{
+    text-align: center; 
+    font-size: 32px;  
+    font-weight: bold;
+}
+
+.recipe_pare{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.recipe_url{
+    text-decoration: none;
+    color: black;
+}
+
+.main_footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3E94D1;
+    font-size: 24px;
+    height: 10%;
+    width: 100%;
+}
+
+.shlyapa_footer{
+    text-align: left;
+}
+
+.social_media{
+    right: 60px;
+    margin-top: 3px;
+    width: 6vw;
+    height: 10vh;
+    margin-right: 5px;
+}
