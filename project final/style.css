@@ -18,6 +18,7 @@ body{
     margin-left: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    text-align: center;
 }
 
 .menu{
@@ -27,11 +28,18 @@ body{
     margin-left: 15px;
     padding: 7px;
     border-radius: 10px;
+    background: rgba( 255, 255, 255, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
 .shlyapa {
-    width: 65%;
+    width: 55%;
     text-align: right;
+    
 }
 
 .slider{
@@ -53,6 +61,25 @@ body{
     width: 95%;
     padding: 50px;
     flex: 1 0  95%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide:nth-child(1) {
+    background-image: url(image/767255.jpg);
+}
+
+.slide:nth-child(2) {
+    background-image: url(image/767256.jpg);
+}
+
+.slide:nth-child(3) {
+    background-image: url(image/767257.jpg);
+}
+
+.slide:nth-child(4) {
+    background-image: url(image/767577.jpg);
 }
 
 .image_slide{
@@ -62,8 +89,34 @@ body{
 }
 
 .text_slide{
-    color: black;
-    font-size: 32px;
+    font-family: 'Pacifico', cursive;
+    color: whitesmoke;
+    font-size: 48px;
+    border: 3px #3E94D1 solid;
+    border-radius: 10px;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+	text-shadow: 
+		-0   -1px 1px #000000,
+		 0   -1px 1px #000000,
+		-0    1px 1px #000000,
+		 0    1px 1px #000000,
+		-1px -0   1px #000000,
+		 1px -0   1px #000000,
+		-1px  0   1px #000000,
+		 1px  0   1px #000000,
+		-1px -1px 1px #000000,
+		 1px -1px 1px #000000,
+		-1px  1px 1px #000000,
+		 1px  1px 1px #000000,
+		-1px -1px 1px #000000,
+		 1px -1px 1px #000000,
+		-1px  1px 1px #000000,
+		 1px  1px 1px #000000;
+}
+
+.slide_url{
     text-decoration: none;
 }
 
@@ -166,4 +219,85 @@ body{
     width: 6vw;
     height: 10vh;
     margin-right: 5px;
+}
+
+.line{
+    text-decoration: underline;
+    color: #FFAC40;
+    text-align: center;
+    text-shadow: 
+		-0   -1px 1px #000000,
+		 0   -1px 1px #000000,
+		-0    1px 1px #000000,
+		 0    1px 1px #000000,
+		-1px -0   1px #000000,
+		 1px -0   1px #000000,
+		-1px  0   1px #000000,
+		 1px  0   1px #000000,
+		-1px -1px 1px #000000,
+		 1px -1px 1px #000000,
+		-1px  1px 1px #000000,
+		 1px  1px 1px #000000,
+		-1px -1px 1px #000000,
+		 1px -1px 1px #000000,
+		-1px  1px 1px #000000,
+		 1px  1px 1px #000000;
+}
+
+.shlyapa_recipe {
+    width: 90%;
+    text-align: right;
+}
+
+.recipe_pare_in_dish{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.recipe_opisanie_in_dish{
+    top: 100px;
+    width: 40vw;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    height: 80vh;
+    float: left;
+    border: 3px solid #3E94D1;
+    font-size: 24px;
+    border-radius: 25px;
+}
+
+.name_recipe_in_dish{
+    text-align: center; 
+    font-size: 28px;  
+    font-weight: bold;
+}
+
+.shlyapa_recipe{
+    width: 80%;
+    text-align: right;
+}
+
+.recipe_step_by_step{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.recipe_opisanie_step_by_step{
+    top: 100px;
+    width: 40vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 35px;
+    height: 40vh;
+    float: left;
+    border: 3px solid #3E94D1;
+    font-size: 24px;
+    border-radius: 25px;
+}
+
+.recipe_foto_2{
+    float: right;
+    margin: 7px 11.5% 7px 7px;
 }

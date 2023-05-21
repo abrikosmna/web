@@ -9,18 +9,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="main_head">
             <p class="head_name">
-                Приветствую вас на лучшем сайте рецптов
+                Приветствую вас на лучшем сайте рецетов
             </p>
             <p class="shlyapa">
-                <a href="" class="menu">Главная</a>
-                <a href="" class="menu">Рецепты</a>
-                <a href="" class="menu">Популярные рецепты</a>
+                <a href="index.html" class="menu">Главная</a>
+                <a href="recipe.html" class="menu">Рецепты</a>
+                <a href="index.html#recipe" class="menu">Популярные рецепты</a>
             </p>
         </div>
     </header>
@@ -31,37 +34,33 @@
     
             <div class="slides_container">
                 <div class="slide">
-                    <a href=""> 
+                    <a href="breakfast.html" class="slide_url"> 
                         <p class="text_slide"> Завтрак</p>
-                        <img src="image/breakfast.webp" alt="" class="image_slide">
                     </a>
                 </div>
                 <div class="slide">
-                    <a href=""> 
+                    <a href="dinner.html" class="slide_url"> 
                         <p class="text_slide"> Обед</p>
-                        <img src="image/obed.webp" alt="" class="image_slide">
                     </a>
                 </div>
                 <div class="slide">
-                    <a href=""> 
+                    <a href="supper.html" class="slide_url"> 
                         <p class="text_slide"> Ужин</p>
-                        <img src="image/ushin.webp" alt="" class="image_slide">
                     </a>
                 </div>
                 <div class="slide">
-                    <a href=""> 
+                    <a href="snacks.html" class="slide_url"> 
                         <p class="text_slide"> Закуски</p>
-                        <img src="image/zakus.webp" alt="" class="image_slide">
                     </a>
                 </div>
             </div>
         </div>
-        <div class="recipe_main">
+        <div class="recipe_main" id="recipe">
             <div class="recipe_pare">
                 <div class="recipe_foto">
                     <img src="image/borsh.webp" alt="борщ" class="foto_recipe">
                 </div>
-                <a href="" class="recipe_url">
+                <a href="borsh.html" class="recipe_url">
                     <div class="recipe_opisanie">
                         <p class="name_recipe">
                             Вкуснейший борщ
