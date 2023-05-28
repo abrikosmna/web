@@ -20,6 +20,26 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-align: center;
+    text-decoration: underline;
+    color: #FFAC40;
+    text-align: center;
+    text-shadow: 
+		-0   -1px 1px #000000,
+		 0   -1px 1px #000000,
+		-0    1px 1px #000000,
+		 0    1px 1px #000000,
+		-1px -0   1px #000000,
+		 1px -0   1px #000000,
+		-1px  0   1px #000000,
+		 1px  0   1px #000000,
+		-1px -1px 1px #000000,
+		 1px -1px 1px #000000,
+		-1px  1px 1px #000000,
+		 1px  1px 1px #000000,
+		-1px -1px 1px #000000,
+		 1px -1px 1px #000000,
+		-1px  1px 1px #000000,
+		 1px  1px 1px #000000;
 }
 
 .menu{
@@ -161,17 +181,22 @@ body{
 }
 
 .recipe_pare:nth-child(even){
+    
     flex-direction: row-reverse;
+    
 }
 
-.recipe_url:nth-child(even){
-    margin-right: 10px;
-}
+
+
 
 .recipe_foto{
-    float: left;
+    display: flex;
+    width: 50%;
+    /* float: left; */
     margin: 7px 6% 7px 7px;
 }
+
+
 
 .foto_recipe{
     border-radius: 25px;
@@ -225,34 +250,13 @@ body{
 
 .social_media{
     right: 60px;
-    margin-top: 10px;
+    margin-top: 15px;
     width: 4vw;
     height: 6vh;
-    margin-right: 5px;
+    margin-right: 9px;
+    text-decoration: none;
 }
 
-.line{
-    text-decoration: underline;
-    color: #FFAC40;
-    text-align: center;
-    text-shadow: 
-		-0   -1px 1px #000000,
-		 0   -1px 1px #000000,
-		-0    1px 1px #000000,
-		 0    1px 1px #000000,
-		-1px -0   1px #000000,
-		 1px -0   1px #000000,
-		-1px  0   1px #000000,
-		 1px  0   1px #000000,
-		-1px -1px 1px #000000,
-		 1px -1px 1px #000000,
-		-1px  1px 1px #000000,
-		 1px  1px 1px #000000,
-		-1px -1px 1px #000000,
-		 1px -1px 1px #000000,
-		-1px  1px 1px #000000,
-		 1px  1px 1px #000000;
-}
 
 .shlyapa_recipe {
     width: 90%;
@@ -268,7 +272,7 @@ body{
 .recipe_opisanie_in_dish{
     top: 100px;
     width: 40vw;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 25px;
     height: 80vh;
     float: left;
@@ -311,4 +315,56 @@ body{
 .recipe_foto_2{
     float: right;
     margin: 7px 11.5% 7px 7px;
+}
+
+.recipe_pare:nth-child(even) .recipe_foto {
+    margin: 0;
+    width: 100%;
+    justify-content:end;
+}
+
+p.underline {
+    font-size: 34px; /* размер шрифта относительно ширины браузера */
+    text-decoration: none;
+    font-weight: bold;
+    color: #e76f51;
+    position: relative;
+    transition: color 0.8s, text-shadow 0.8s; /* для плавного изменения цвета и тени(свечения) ссылки */
+}
+p.underline:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    background: #2a9d8f;
+    height: 20%;
+    width: 0%;
+    z-index: -1;
+    transition: width 0.8s, opacity 0.8s, box-shadow 0.8s;
+    border-radius: 100px;
+    opacity: 0;
+    box-shadow: 0 0 16px rgba(42,157,143,0);
+}
+  
+p.underline:hover {
+    color: #f4a261;  /* светлее при наведении */
+    text-shadow: 0 0 16px rgba(244,162,97,0.64);
+}
+  
+/* При наведении на ссылку, псевдоэлемент :after становится непрозрачным и шириной 100% относительно текста ссылки*/
+p.underline:hover:after {
+    margin-top: 10px;
+    width: 50%;
+    opacity: 1;
+    box-shadow: 0 0 16px rgba(42,157,143,0.88);
+}
+
+p.underline_c:after {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.recipe_foto_in_dish{
+    margin-right: 50px;
+    margin-left: 40px;
 }
